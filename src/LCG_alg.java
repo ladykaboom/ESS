@@ -1,6 +1,5 @@
 public class LCG_alg {
 
-	/* kod wziê³am bodaj¿e ze strony RossettaCode */
 	private static long m = 65355; // to musimy znalezc
 	private static long a = 1001;
 	private static long c = 7;
@@ -29,4 +28,7 @@ public class LCG_alg {
 		return seed;
 	}
 
+	public long guessRand(long a2, long seed2, long c2, long m2) {
+		return (mult(a2, seed2, m2) + c2) % m2;
+	}
 }
